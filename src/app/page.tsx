@@ -4,9 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BannerCard, BannerCard_2 } from './components/banner-card';
 
-import shoeImage_1 from '../../public/images/shoe_1-removebg.png';
-import menCloth_1 from '../../public/images/cloth_1-men.png';
-import womenCloth_1 from '../../public/images/cloth_1-women.png';
+// import shoeImage_1 from '../../public/images/shoe_1-removebg.png';
+// import menCloth_1 from '../../public/images/cloth_1-men.png';
+// import womenCloth_1 from '../../public/images/cloth_1-women.png';
 import bannerImage_3 from '../../public/images/banner-image-3.png';
 import image_1 from '../../public/images/image_1.png';
 import image_2 from '../../public/images/image_2.png';
@@ -72,7 +72,7 @@ const Home = () => {
       </div>
 
       <div className="homefifthCon bg-re-400 flex flex-col mt-[30px]">
-        <h1 className="text-[#111110] text-center font-bold text-xl mb-[30px]">
+        <h1 className="text-[#111110] ml-[80px] tex-center font-bold text-xl mt-[20px] mb-[10px]">
           Don't Miss
         </h1>
         <div className="leftCon mx-auto w-full md:w-[1200px] bg-gray-600 h-auto">
@@ -82,19 +82,19 @@ const Home = () => {
           <h2 className="text-5xl font-bold text-[#111111] mt-[20px]">
             FLIGHT ESSENTIALS
           </h2>
-          <p className="text-[#111111]">
+          <p className="text-[#111111] mt-[25px]">
             Your built-to-last, all weeks wear -but with style only Jorden Brand
             can deliver
           </p>
-          <button className="text-[#111111]">Shop</button>
+          <button className="text-white rounded-full bg-[#111111] px-7 py-2 mt-[30px]">Shop</button>
         </div>
       </div>
 
       {/* //////////////////// home page 6th section start /////////////// */}
 
-      <div className="homeSixthCon flex flex-col mt-12">
-        <h1 className="text-[#111110] font-bold text-center text-xl mb-8">
-          Don't Miss
+      <div className="homeSixthCon flex flex-col mt-[100px]">
+        <h1 className="text-[#111110] font-bold tex-center text-xl ml-[80px] mt-[30px] py-[20px] bg-slat-500">
+        The Essentials
         </h1>
         <div className="leftCon mx-auto w-full max-w-[1200px] flex flex-col md:flex-row gap-6">
           {[
@@ -152,10 +152,10 @@ const Home = () => {
           ].map((category, index) => (
             <div
               key={index}
-              className="flex-1 min-w-[250px]] p-4 rounded-md shadow-md"
+              className="flex-1 min-w-[250px] p-4 rounded-md shadow-md"
             >
-              <h1 className="font-bold text-lg mb-4">{category.title}</h1>
-              <ul className="space-y-2">
+              <h1 className="font-bold text-lg mb-4 text-[#111111]">{category.title}</h1>
+              <ul className="space-y-2 text-[#757575]">
                 {category.items.map((item, itemIndex) => (
                   <li key={itemIndex}>{item}</li>
                 ))}

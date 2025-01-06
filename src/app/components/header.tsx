@@ -1,13 +1,16 @@
+// "use client"
 import React from 'react';
 import Image from 'next/image';
 import nikeManLogo from '../../../public/images/nike-man-logo.png';
 import nikeLogo from '../../../public/images/nike-logo.png';
 import searchIcon from '../../../public/images/search-icon.png';
-import heartIcon from '../../../public/images/heart-icon.png';
-import lockIcon from '../../../public/images/lock-icon.png';
+// import heartIcon from '../../../public/images/heart-icon.png';
+// import lockIcon from '../../../public/images/lock-icon.png';
 
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 export const Header = () => {
   return (
@@ -28,19 +31,19 @@ export const Header = () => {
 
           <div className="div-3  w-[155px] h-auto b-[#a55050] flex">
             <Button
-              className="bg-slat-500 border-r-[1px] rounded-none  border-black font-bold"
+              className="bg-slat-500 border-r-[1px] rounded-none  border-white font-bold"
               variant="link"
             >
               Find a Store
             </Button>
             <Button
-              className="bg-slat-500 border-r-[1px] rounded-none  border-black font-bold"
+              className="bg-slat-500 border-r-[1px] rounded-none  border-white font-bold"
               variant="link"
             >
               Help
             </Button>
             <Button
-              className="bg-slat-500 border-r-[1px] rounded-none  border-black font-bold"
+              className="bg-slat-500 border-r-[1px] rounded-none  border-white font-bold"
               variant="link"
             >
               Join Us
@@ -64,16 +67,16 @@ export const Header = () => {
             ></Image>
           </div>
 
-          <div className='block md:hidden'>
+          <div className=' bg-slat-600 block md:hidden'>
             <Button
               className="font-bold"
               variant="link"
             >
-              <Menu className="text-black" />
+              <Menu className="text-black bg-slat-600" />
             </Button>
           </div>
 
-          <div className="hidden md:flex div-2 w-[600px] h-[40px] bg-re-400 relative left-[190px] top-[10px] ">
+          <div className="hidden md:flex div-2 w-[600px] h-[40px] bg-re-400 relative left-[100px] top-[10px] ">
             <Button className=" font-bold text-[18px]" variant="link">
               New and Featured
             </Button>
@@ -94,7 +97,7 @@ export const Header = () => {
             </Button>
           </div>
 
-          <div className="hidden div-3 w-[450px] h-[40px] bg-re-400 relative md:flex justify-around">
+          <div className="bg-slat-400 hidden div-3 w-[450px] h-[40px] bg-re-400 relative md:flex justify-around">
             
             <div className="div-3i relative bottom-[25px]">
               <div className="w-[28px] h-[28px] bg-slat-400 relative left-[190px] top-[37px]">
@@ -112,23 +115,25 @@ export const Header = () => {
             </div>
 
             <div className=" div-3ii w-[380px h-[380px bg-slat-400 relative top-[3px] ">
-              <Image
+              {/* <Image
                 src={heartIcon}
                 width={40}
                 height={40}
                 alt="heart logo"
                 className="text-[#111111]"
-              ></Image>
+              ></Image> */}
+              <Heart className='w-[25px] h-[25px] mt-[10px]'/>
             </div>
 
             <div className="div-3iii w-[90px h-[90px bg-slat-400 relative top-[3px]">
-              <Image
-                src={lockIcon}
+              {/* <Image
+                src={ShoppingCart}
                 width={40}
                 height={40}
                 alt="lock logo"
                 className="text-[#111111]"
-              ></Image>
+              ></Image> */}
+              <ShoppingCart className='w-[30px] h-[30px] mt-[8px]'/>
             </div>
           </div>
         </div>

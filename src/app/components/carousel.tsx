@@ -11,11 +11,11 @@ import shoeImage_1 from '../../../public/images/shoe_1-removebg.png';
 
 const CarouselSlider = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-[#111111] font-bold text-xl w-max py-2 px-4 mt-6">
+    <div className="flex flex-col items-center bg-slat-400 h-[500px] mt-[50px]">
+      <h1 className="text-[#111111] font-bold text-xl w-max py-2 px-4 mt-12 m-[200px] mr-[1190px] bg-slat-600">
         Best of Air Max
       </h1>
-      <div className="w-full max-w-[1200px] mt-6 px-4">
+      <div className="w-full max-w-[1200px] mt-[-190px] px-4 bg-re-400">
         <Carousel className="relative">
           <CarouselContent className="flex gap-4">
             {/* Map through items for scalability */}

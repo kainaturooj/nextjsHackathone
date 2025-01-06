@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import locationLogo from '../../../public/images/location-logo.png';
-import copyWriteTextImage from '../../../public/images/copy-write-image.png';
+// import copyWriteTextImage from '../../../public/images/copy-write-image.png';
 import twitorLogo from '../../../public/images/twitor-logo.png';
 import facebookLogo from '../../../public/images/facebook-logo.png';
 import youtubeLogo from '../../../public/images/youtube-logo.png';
@@ -15,7 +15,7 @@ export const Footer = () => {
         {/* Left Column */}
         <div>
           <h3 className="font-bold">FIND A STORE</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-[#bfbebe]">
             <li>BECOME A MEMBER</li>
             <li>SIGN UP FOR EMAIL</li>
             <li>Send Us Feedback</li>
@@ -25,7 +25,7 @@ export const Footer = () => {
         {/* Middle Column */}
         <div>
           <h3 className="font-bold">GET HELP</h3>
-          <ul className="space-y-2 text-[#7E7E7E]">
+          <ul className="space-y-2 text-[#7E7E7E] ">
             <li>Order Status</li>
             <li>Delivery</li>
             <li>Returns</li>
@@ -71,12 +71,13 @@ export const Footer = () => {
               alt="Location Logo"
             />
             <p>India</p>
-            <Image
+            <p className='text-[#7E7E7E]'>© 2023 Nike, Inc. All Rights Reserved</p>
+            {/* <Image
               src={copyWriteTextImage}
               width={100}
               height={20}
               alt="Copywrite Text"
-            />
+            /> */}
           </div>
           {/* Right */}
           <div className="flex space-x-4 mt-4 md:mt-0 text-[#7E7E7E]">

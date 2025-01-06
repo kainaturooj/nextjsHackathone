@@ -60,11 +60,11 @@ const BannerCard = ({
           {/* Buttons */}
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             {button1Text && (
-              <button className="px-5 py-3 bg-gray-100 text-gray-900 rounded-full">
+              <button className="px-5 py-3 bg-[#111111] text-white rounded-full">
                 {button1Text}
               </button>
             )}
-            <button className="px-7 py-3 bg-gray-100 text-gray-900 rounded-full">
+            <button className="px-7 py-3 bg-[#111111] text-white rounded-full">
               {button2Text}
             </button>
           </div>
@@ -106,7 +106,7 @@ const BannerCard_2 = ({
 
           {/* Button */}
           <div className="mt-6">
-            <button className="px-7 py-3 bg-gray-100 text-gray-900 rounded-full">
+            <button className="px-7 py-3 bg-[#111111] text-gray-900 rounded-full">
               {button2Text}
             </button>
           </div>
