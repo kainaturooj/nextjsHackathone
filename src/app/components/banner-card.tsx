@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
+import Link from 'next/link';
+
 interface BannerCardProps {
   src: string;
   alt: string;
@@ -60,13 +62,21 @@ const BannerCard = ({
           {/* Buttons */}
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             {button1Text && (
+                <>
+
+                <Link href='/product-store'>
               <button className="px-5 py-3 bg-[#111111] text-white rounded-full">
                 {button1Text}
               </button>
+              </Link>
+              </>
             )}
+
+            <Link href="/product-store">
             <button className="px-7 py-3 bg-[#111111] text-white rounded-full">
               {button2Text}
             </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -86,7 +86,9 @@ const Home = () => {
             Your built-to-last, all weeks wear -but with style only Jorden Brand
             can deliver
           </p>
+          <Link href="/product-store">
           <button className="text-white rounded-full bg-[#111111] px-7 py-2 mt-[30px]">Shop</button>
+          </Link>
         </div>
       </div>
 
